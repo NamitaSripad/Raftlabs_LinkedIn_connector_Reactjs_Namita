@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(()=>{document.getElementById("connect-all-btn").addEventListener("click",(async()=>{const[t]=await chrome.tabs.query({active:!0,currentWindow:!0});chrome.scripting.executeScript({target:{tabId:t.id},func:()=>{document.querySelectorAll('button[data-control-name="connect"]').forEach((t=>{t&&t.click()}))}})}))}));
+//# sourceMappingURL=main.8f221d0f.js.map
